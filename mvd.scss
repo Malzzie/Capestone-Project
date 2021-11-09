@@ -1,0 +1,215 @@
+//SCSS imports
+@import "../scss/bootstrap/scss/functions";
+@import "../scss/bootstrap/scss/variables";
+@import "../scss/bootstrap/scss/bootstrap-grid.scss";
+@import "../scss/bootstrap/scss/utilities/api";
+@import "../scss/bootstrap/scss/mixins";
+@import "../scss/bootstrap/scss/mixins/breakpoints";
+@import "../scss/bootstrap/scss/mixins/container";
+@import "../scss/bootstrap/scss/mixins/buttons";
+
+$grid-breakpoints: (xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+//variables 
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #198754 !default;
+$teal: #20c997 !default;
+$cyan: #0dcaf0 !default;
+$colors: ("blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+) !default;
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value") !default;
+
+$gray-900: #212529 !default;
+$white: #fff !default;
+$black: #000 !default;
+$border-radius:.25rem !default;
+
+$primary:$blue !default;
+$body-color:$gray-900 !default;
+$font-size-base:1rem !default;
+$border-width:1px !default;
+
+$link-decoration:underline !default;
+$link-color:$primary !default;
+$link-shade-percentage:20% !default;
+$link-hover-decoration:null !default;
+$nav-link-transition:color .15s ease-in-out,
+background-color .15s ease-in-out,
+border-color .15s ease-in-out !default;
+
+$utilities-colors: $theme-colors-rgb !default;
+
+$enable-shadows:false !default;
+
+
+$link-hover-color:shift-color($link-color, $link-shade-percentage) !default;
+
+$link-color:$primary !default;
+
+$nav-link-padding-y:.5rem !default;
+$nav-link-padding-x:1rem !default;
+$nav-link-font-size: 1em;
+$nav-link-font-weight:null !default;
+$nav-link-color:$link-color !default;
+$nav-link-hover-color:$link-hover-color !default;
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)),
+  $spacers);
+
+.container {
+  width: 100%;
+  padding: 0px;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+
+}
+
+.col-1 {
+  flex: 25%;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  padding-top: 15em;
+  padding-bottom: 25em;
+
+}
+
+.col-2 {
+  flex: 25%;
+  padding-top: 3em;
+  padding-bottom: 0em;
+
+}
+
+h2 {
+  font-size: xxx-large;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: stretch;
+  justify-items: center;
+
+}
+
+body {
+  background-color: grey;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  padding: $nav-link-padding-y $nav-link-padding-x;
+  @include font-size($nav-link-font-size);
+  font-weight: $nav-link-font-weight;
+  color: $nav-link-color;
+  text-decoration: if($link-decoration==none, null, none);
+  @include transition($nav-link-transition);
+
+  &:hover,
+  &:focus {
+    color: $nav-link-hover-color;
+    text-decoration: if($link-hover-decoration==underline, none, null);
+  }
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  color: $black;
+}
+
+footer {
+  background: $gray-900;
+  border-top: solid 2px $border-color;
+  bottom: 0;
+  padding-bottom: 0;
+  width: 100%;
+  color: $nav-link-color;
+
+}
+
+footer ul li {
+  display: inline;
+
+}
+
+footer ul {
+  float: left;
+  padding: 1px;
+  color: $nav-link-color;
+}
+
+footer ul :hover {
+  text-decoration: underline;
+  color: $nav-link-color;
+}
+
+.footer-right {
+  float: right;
+  color: $nav-link-color;
+}
+
+.container-row {
+
+  padding-bottom: 3em;
+
+  .btn {
+    align-items: center;
+  }
+
+}
+
+.table {
+  align-items: center;
+  padding-bottom: 100em;
+}
+
+.p {
+  text-align: center;
+}
