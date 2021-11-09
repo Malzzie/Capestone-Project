@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+  <link rel="stylesheet" href="scss/mvd.css" type="text/css">
+  <script type="text/javascript" src="mvd.js"></script>
+
+  <title>Modern Vintage Dictionary</title>
+</head>
+
+<body>
+  <header>
+    <!--Logo-->
+    <div class="logo">
+      <h1><b><i>Modern Vintage Dictionary</i></b></h1>
+    </div>
+    <!--Menu-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!----------------------------Navigation Bar-------------------------------------------->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+
+            <li class="nav-item1">
+              <a class="nav-link" id="styles" href="#">Styles</a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact us</a>
+            </li>
+            <li class="bmpage"><a href="bookmark.html">(Bookmarks <span> 0) </span></a></li>
+          </ul>
+          <div class="emark">
+            <img src="bookmark.svg" alt="bookmark" class="earMark" id="aalater">
+          </div>
+          <!---------------------------------Search Bar------------------------------------------->
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-------------------------------------Drop Menu--------------------------------------------------->
+    <ul id="drpmenu">
+      <li class="nav-item">
+        <a class="nav-link" href="formal.html">Formal </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="casual.html">Casual </a>
+      </li>
+    </ul>
+  </header>
+  <div class="row">
+    <!----------------------------------First Column------------------------------>
+    <div class="col-1">
+      <h2>_Every man deserves great style_</h2>
+      <p id=quotes>
+        <h4>“Men’s fashions all start as sports clothes and progress to the great occasions of state. The tailcoat,
+          which started out as a hunting coat, is just finishing such a journey. The tracksuit is just beginning one.”
+        </h4>
+
+        <h6> – Angus McGill</h6>
+        <img src="bookmark.svg" alt="bookmark" class="earMark" id="alater">
+        <img src="hand-thumbs-up.svg" class="like" id="like1"><span class="counter" id="counter1"
+          onclick()="incrementer()">0</span>
+        <button class="btn btn-outline-success" id="later1"><a href="#" class="tsend">save for later</a></button>
+        <form>
+          <input type="checkbox" name="Like" id="Like1">
+          <label for="like">Like</label>
+        </form>
+      </p>
+    </div>
+    <!-----------------------------------Second Column------------------------------------>
+    <div class="col-2">
+      <div class="images">
+        <div>
+          <img src="images/main/pic7.jpg" class="img-thumbnail">
+          <img src="bookmark.svg" alt="bookmark" class="earMark" id="blater">
+          <img src="hand-thumbs-up.svg" class="like" id="like2"><span class="counter" id="counter2"> (0) </span>
+          <button class="btn btn-outline-success" id="later2"><a href="#" class="tsend">save for later</a></button>
+          <form>
+            <input type="checkbox" name="Like" id="Like2">
+            <label for="like">Like</label>
+          </form>
+        </div>
+        <div>
+          <img src="images/main/pic2.jpg" class="img-thumbnail">
+          <img src="bookmark.svg" alt="bookmark" class="earMark" id="clater">
+          <img src="hand-thumbs-up.svg" class="like" id="like3"><span class="counter" id="counter3"> (0) </span>
+          <button class="btn btn-outline-success" id="later3"><a href="#" class="tsend">save for later</a></button>
+          <form>
+            <input type="checkbox" name="Like" id="Like3">
+            <label for="like">Like</label>
+          </form>
+        </div>
+        <div>
+          <img src="images/main/pic3.jpg" class="img-thumbnail">
+          <img src="bookmark.svg" alt="bookmark" class="earMark" id="dlater">
+          <img src="hand-thumbs-up.svg" class="like" id="like4"><span class="counter" id="counter4"> (0) </span>
+          <button class="btn btn-outline-success" id="later4"><a href="#" class="tsend">save for later</a></button>
+          <form>
+            <input type="checkbox" name="Like" id="Like4">
+            <label for="like">Like</label>
+          </form>
+        </div>
+        <div>
+          <img src="images/main/pic4.jpg" class="img-thumbnail">
+          <img src="bookmark.svg" alt="bookmark" class="earMark" id="elater">
+          <img src="hand-thumbs-up.svg" class="like" id="like5"><span class="counter" id="counter5"> (0) </span>
+          <button class="btn btn-outline-success" id="later5"><a href="#" class="tsend">save for later</a></button>
+          <form>
+            <input type="checkbox" name="Like" id="Like5">
+            <label for="like">Like</label>
+          </form>
+        </div>
+        <div>
+          <img src="images/main/pic5.jpg" class="img-thumbnail">
+          <img src="bookmark.svg" alt="bookmark" class="earMark" id="flater">
+          <img src="hand-thumbs-up.svg" class="like" id="like6"><span class="counter" id="counter6"> (0) </span>
+          <button class="btn btn-outline-success" id="later6"><a href="#" class="tsend">save for later</a></button>
+          <form>
+            <input type="checkbox" name="Like" id="Like6">
+            <label for="like">Like</label>
+          </form>
+        </div>
+        <div>
+          <img src="images/main/pic6.jpg" class="img-thumbnail">
+          <img src="bookmark.svg" alt="bookmark" class="earMark" id="glater">
+          <img src="hand-thumbs-up.svg" class="like" id="like7"><span class="counter" id="counter7"> (0) </span>
+          <button class="btn btn-outline-success" id="later7"><a href="#" class="tsend">save for later</a></button>
+          <form>
+            <input type="checkbox" name="Like" id="Like7">
+            <label for="like">Like</label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-----------------------------Footer Navbar---------------------------->
+  <footer class="navbar navbar-inverse navbar-fixed-bottom">
+    <div>
+      <ul class="footer-left">
+        <li style="color:grey;">Advertising</li>
+        <li style="color:grey;">Business</li>
+        <li style="color:grey;">About</li>
+      </ul>
+    </div>
+    <div>
+      <ul class="footer-right">
+        <li style="color: grey;">Privacy</li>
+        <li style="color: grey;">Terms</li>
+        <li style="color: grey;">Settings</li>
+      </ul>
+    </div>
+
+  </footer>
+
+</body>
+
+
+
+</html>
